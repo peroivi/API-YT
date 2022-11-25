@@ -9,7 +9,7 @@ request = youtube.subscriptions().insert(
     body=dict(
       snippet=dict(
         resourceId=dict(
-          channelId=channel_id
+          channelId='UCzvqiTA_OIQC3y33XFl3aYA'
         )
       )
 ))
