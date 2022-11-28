@@ -7,7 +7,7 @@ youtube = build('youtube', 'v3', developerKey=api_key)
 
 request = youtube.channels().list(
     part='statistics',
-    forUsername='elrubius'
+    id='UC4PIwddtPs6p3asO433oMdQ'
 )
 
 response = request.execute()
