@@ -1,20 +1,16 @@
-// key public actou
-// key = "AIzaSyCQnghJSvTkupqj9vMbs6SdESD50lQYDEk"
-// key publi pere upc
-key = "AIzaSyALGc0xIGZ21GzLPx8evJ8vy8inE61uKZk"
+key = "key-publica"
 
-// elrubius
-// idcanal = "UCXazgXDIYyWH-yXLAkcrFxw"
-// mio
-idcanal = "UCzvqiTA_OIQC3y33XFl3aYA"
-maxresults = "3"
+idcanal = "id-canal"
+maxresults = "3" //numero de videos que volem que surtin
 
+//ruta de llistat d'estadistiques del canal
 busqueda = "https://youtube.googleapis.com/youtube/v3/channels?part=statistics&id="+idcanal+"&key="+key
 fetch(busqueda)
 .then((resposta)=>{
     return resposta.json()
     
 }).then((data)=>{
+    //agafareem nomes subscriberCount, videoCount i viewCount
     container = document.querySelector(".canal")
     container.innerHTML += `
             <h3> Suscriptors: ${data.items[0].statistics.subscriberCount} </h3>
@@ -23,7 +19,7 @@ fetch(busqueda)
 
         `
 })
-
+//ruta de llistat de videos del canal, indicant el maxresults
 busqueda = "https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId="+idcanal+"&maxResults="+maxresults+"&order=date&key="+key
 fetch(busqueda)
 .then((resposta)=>{
