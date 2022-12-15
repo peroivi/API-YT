@@ -1,1 +1,1 @@
-python upload_video.py --file="C:\Users\Pere\Videos\Captures\f1proba.mp4" --title="F1 PROBA" --description="PRUEBA DE JUEGO F1 PARA STEAM" --keywords="f1,steam" --category="22" --privacyStatus="private"
+python upload_video.py --file="ruta-al-video" --title="titulo-video" --description="descripcion-video" --keywords="palabras-clave" --category="id-categoria" --privacyStatus="private-o-public"
