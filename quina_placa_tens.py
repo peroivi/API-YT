@@ -1,8 +1,7 @@
 
 from googleapiclient.discovery import build
-# la indiquem directament pq es publica i no ns preocupa que algu la pugui obtenir
-api_key = 'AIzaSyCQnghJSvTkupqj9vMbs6SdESD50lQYDEk'
-# id meu canal id = UCzvqiTA_OIQC3y33XFl3aYA
+
+api_key = 'key-publica-api'
 
 youtube = build('youtube', 'v3', developerKey=api_key)
 
