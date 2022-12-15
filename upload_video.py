@@ -130,6 +130,7 @@ def resumable_upload(insert_request):
       time.sleep(sleep_seconds)
 
 # filtrem els flags per poder indicar els diferents items del video (titol, descripcio...)
+# i cridem a les funcions per realitzar la penjada
 if __name__ == '__main__':
   argparser.add_argument("--file", required=True, help="Video file to upload")
   argparser.add_argument("--title", help="Video title", default="Test Title")
